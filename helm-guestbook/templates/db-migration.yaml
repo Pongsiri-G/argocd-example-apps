@@ -10,10 +10,10 @@ spec:
     template:
         spec:
             containers:
-            restartPolicy: Never
                 - name: migration
-                    image: busybox
-                    command:
-                        - "sh"
-                        - "-c"
-                        - "echo 'Running db migration..'; sleep 10; echo 'Done!'"
+                  image: busybox
+                  command:
+                    - "sh"
+                    - "-c"
+                    - "echo 'Running db migration..'; sleep 10; echo 'Done!'"
+            restartPolicy: Never
